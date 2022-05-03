@@ -1,0 +1,75 @@
+:root {
+  --blackColor: #000;
+  --bgColor: #02021b;
+  --blueColor: #004471;
+  --purpleColor: #7e006b;
+  --redColor: #960037;
+  --greenColor: rgb(0, 231, 111);
+  --grayColor: rgb(154, 154, 154);
+  --whiteColor: antiquewhite;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+  transition: transform 1s ease-in-out;
+}
+body {
+  background-color: var(--bgColor);
+  color: var(--blackColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+.container {
+  background-color: var(--whiteColor);
+  border-radius: 10px;
+  box-shadow: rgba(22, 22, 62, 0.9) 0px 50px 100px -20px, rgba(0, 0, 0, 0.9) 0px 30px 60px -30px, rgba(10, 37, 64, 0.9) 0px -2px 6px 0px inset;
+  width: 600px;
+  overflow: hidden;
+}
+.header {
+  padding: 3rem;
+}
+h2 {
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+}
+ul {
+  padding: 0;
+  margin-top: 2rem;
+}
+ul li {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+ul li label {
+  cursor: pointer;
+}
+button {
+  background-color: var(--redColor);
+  color: #fff;
+  border: none;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-family: inherit;
+  padding: 1.3rem;
+  transition: all .5s ease-in-out;
+}
+button:hover {
+  background-color: var(--purpleColor);
+}
+button:focus {
+  outline: none;
+}
